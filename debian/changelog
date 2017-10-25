@@ -1,4 +1,4 @@
-qtsvg-opensource-src (5.9.1-2) unstable; urgency=medium
+qtsvg-opensource-src (5.9.1+ubports) xenial; urgency=medium
 
   * Release to unstable.
 
