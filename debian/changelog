@@ -1,4 +1,38 @@
-qtsvg-opensource-src (5.9.1+ubports) xenial; urgency=medium
+qtsvg-opensource-src (5.9.3-0ubports2) xenial; urgency=medium
+
+  * Build for xenial 
+
+ -- Marius <mariogrip@ubuntu.com>  Fri, 23 Feb 2018 02:20:45 +0100
+
+qtsvg-opensource-src (5.9.3-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 03 Dec 2017 21:19:09 -0600
+
+qtsvg-opensource-src (5.9.2-3) unstable; urgency=medium
+
+  * Do not call qmake directly anymore.
+    Require debhelper >= 10.9.2~ (Closes: #880930).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 03 Dec 2017 13:13:59 -0300
+
+qtsvg-opensource-src (5.9.2-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 26 Oct 2017 16:49:09 +0300
+
+qtsvg-opensource-src (5.9.2-1) experimental; urgency=medium
+
+  * New upstream bugfix release.
+  * Bump Qt build-dependencies to 5.9.2.
+  * Use debhelper compat level 10 and dh_missing.
+  * Bump Standards-Version to 4.1.1, stop using deprecated Priority: extra.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 20 Oct 2017 16:11:30 +0300
+
+qtsvg-opensource-src (5.9.1-2) unstable; urgency=medium
 
   * Release to unstable.
 

@@ -11,10 +11,10 @@ export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 export QT_SELECT := qt5
 
 %:
-	dh $@ --parallel --with pkgkde_symbolshelper
+	dh $@ --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
-	qmake QT_BUILD_PARTS+=tests
+	dh_auto_configure -- QT_BUILD_PARTS+=tests
 
 override_dh_auto_build-indep:
 	dh_auto_build -Smakefile -- docs
@@ -48,8 +48,8 @@ override_dh_auto_install-arch:
 override_dh_auto_install-indep:
 	make INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
 
-override_dh_install:
-	dh_install --fail-missing
+override_dh_missing:
+	dh_missing --fail-missing
 
 override_dh_strip:
 	dh_strip --dbgsym-migration='qtsvg5-dbg (<< 5.9.0-2~)'
