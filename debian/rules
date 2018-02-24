@@ -14,7 +14,7 @@ export QT_SELECT := qt5
 	dh $@ --parallel --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
-	dh_auto_configure -- QT_BUILD_PARTS+=tests
+	qmake QT_BUILD_PARTS+=tests
 
 override_dh_auto_build-indep:
 	dh_auto_build -Smakefile -- docs
