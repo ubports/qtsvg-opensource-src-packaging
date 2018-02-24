@@ -18,7 +18,6 @@ Build-Depends: dbus,
                qtbase5-private-dev (>= 5.9.2+dfsg~),
                zlib1g-dev
 Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.0+dfsg~) <!nodoc>,
-                     qtbase5-doc-html (>= 5.9.0+dfsg~) <!nodoc>,
                      qttools5-dev-tools (>= 5.9.0~) <!nodoc>
 Standards-Version: 4.1.1
 Homepage: http://qt-project.org/
